@@ -30,8 +30,8 @@ int main(int argc, char *argv[])
 	if (listen(sock_listen, 4) < 0)
 		printf("Error en el Listen");
 	int i;
-	// Atenderemos solo 10 peticione
-	for(i=0;i<10;i++){
+	// Atenderemos solo 5 peticiones
+	for(i=0;i<5;i++){
 		printf ("Escuchando\n");
 		
 		sock_conn = accept(sock_listen, NULL, NULL);
